@@ -3,9 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Space+Mono&display=swap');
 
 body {
-    margin: 5rem;
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    align-content: center;
     flex-direction: row;
     background-color: #F2CD60;
     color: #F25757;
@@ -16,7 +19,6 @@ body {
 .game-header {
     display: flex;
     height: 100%;
-    width: 40%;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
@@ -62,22 +64,35 @@ input {
     display: flex;
 }
 
-.submit-button {
+.submit-button-container {
     display: flex;
     justify-content: center;
+
 }
 
-.button-container {
-    display: flex;
+.submit-button {
+    cursor: pointer;
+    background-color: #F25757;
+    color: #F2CD60;
+    border: none;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 .reset-button {
     cursor: pointer;
+    background-color: #F25757;
+    color: #F2CD60;
+    border: none;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 .game-board {
     display: flex;
-    width: 60%;
+    /* width: 60%; */
     justify-content: center;
     cursor: pointer;
 }
@@ -102,4 +117,11 @@ input {
     font-size: 30px;
     text-align: center;
     background-color: #F25757;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }
