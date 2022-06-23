@@ -92,7 +92,6 @@ input {
 
 .game-board {
     display: flex;
-    /* width: 60%; */
     justify-content: center;
     cursor: pointer;
 }
@@ -123,5 +122,30 @@ input {
     body {
         display: flex;
         flex-direction: column;
+    }
+
+    .game-header {
+        gap: 5px;
+    }
+
+    .game-title {
+        font-size: 20px;
+    }
+
+    .player-display {
+        font-size: 30px;
+    }
+
+    .grid-item {
+        height: 100px;
+        width: 100px;
+    }
+
+    .submit-button {
+        font-size: 15px;
+    }
+
+    .reset-button {
+        font-size: 15px;
     }
 }
