@@ -1,32 +1,32 @@
 
-// const gameState = {
-//     players: ['x', 'o'],
-//     board: [
-//         [null, null, null],
-//         [null, null, null],
-//         [null, null, null]
-//     ]
-// }
+const gameState = {
+    players: ['x', 'o'],
+    board: [
+        [null, null, null],
+        [null, null, null],
+        [null, null, null]
+    ]
+}
 
-// // state
-// let initialState;
+// state
+let initialState;
 
-// function buildInitialState() {
+function buildInitialState() {
 
-// }
+}
 
-// // render
-// function renderState() {
+// render
+function renderState() {
 
-// }
+}
 
-// // maybe a dozen or so helper functions for tiny pieces of the interface
+// maybe a dozen or so helper functions for tiny pieces of the interface
 
-// // listeners
-// function onBoardClick() {
-//     // update state, maybe with another dozen or so helper functions...
+// listeners
+function onBoardClick() {
+    // update state, maybe with another dozen or so helper functions...
 
-//     renderState() // show the user the new state
-// }
-// const board = document.getElementById('board');
-// board.addEventListener('click', onBoardClick); // etc
+    renderState() // show the user the new state
+}
+const board = document.getElementById('board');
+board.addEventListener('click', onBoardClick); // etc
