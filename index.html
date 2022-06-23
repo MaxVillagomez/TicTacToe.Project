@@ -14,12 +14,28 @@
     <div class="game-header">
         <div class="game-title">
             <header>
-                <h1>Tic-Tac-Toe :)</h1>
+                <h1>Tic-Tac-Toe</h1>
             </header>
         </div>
-        <section class="player-display">
+        <div class="name-input">
+            <section id="first-section" class="first-section">
+                <input type="text" placeholder="Player 1's Name" id="firsttext"><br>
+            </section>
+
+            <section id="second-section" class="second-section">
+                <input type="text" placeholder="Player 2's Name" id="secondtext"><br>
+
+            </section>
+            <section class="submit-button">
+                <button type="button" id="second-button">Submit</button>
+            </section>
+        </div>
+        <div class="player-display">
             <span class="display-player playerX">Player</span>'s turn
-        </section>
+        </div>
+        <div class="reset-button-container">
+            <button class="reset-button">Reset</button>
+        </div>
     </div>
     <div class="game-board">
         <div class="grid-container">

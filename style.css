@@ -1,8 +1,16 @@
+/* color palette:  #EAF2E3, #61E8E1, #F25757, #F2E863, #F2CD60 */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Space+Mono&display=swap');
+
 body {
     margin: 5rem;
     display: flex;
     align-items: center;
     flex-direction: row;
+    background-color: #F2CD60;
+    color: #F25757;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 .game-header {
@@ -11,7 +19,8 @@ body {
     width: 40%;
     justify-content: space-between;
     flex-direction: column;
-
+    align-items: center;
+    gap: 50px;
 }
 
 
@@ -21,17 +30,56 @@ body {
     font-size: 30px;
     align-items: flex-start;
     align-content: flex-start;
+
 }
 
 .player-display {
     display: flex;
     height: 20%;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #EAF2E3;
+    border: none;
+    margin: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.first-section {
+    display: flex;
+}
+
+.second-section {
+    display: flex;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+}
+
+.reset-button {
+    cursor: pointer;
 }
 
 .game-board {
     display: flex;
     width: 60%;
     justify-content: center;
+    cursor: pointer;
 }
 
 .grid-container {
@@ -49,9 +97,9 @@ body {
     width: 150px;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
-    border: 1px solid black;
+    border: 2px solid #F2CD60;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    background-color: #F25757;
 }
