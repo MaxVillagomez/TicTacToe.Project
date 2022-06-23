@@ -1,8 +1,37 @@
 body {
-    margin: 0;
+    margin: 5rem;
     display: flex;
     align-items: center;
+    flex-direction: row;
+}
+
+.game-header {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: space-between;
     flex-direction: column;
+
+}
+
+
+.game-title {
+    display: flex;
+    height: 80%;
+    font-size: 30px;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.player-display {
+    display: flex;
+    height: 20%;
+}
+
+.game-board {
+    display: flex;
+    width: 60%;
+    justify-content: center;
 }
 
 .grid-container {
@@ -16,8 +45,8 @@ body {
 
 .grid-item {
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     justify-content: center;
     align-items: center;
     background-color: lightgray;
