@@ -45,6 +45,10 @@ body {
 .name-input {
     display: flex;
     flex-direction: column;
+    font-size: 40px;
+    color: #F25757;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 input {
@@ -56,11 +60,11 @@ input {
 
 }
 
-.first-section {
+.playerOne {
     display: flex;
 }
 
-.second-section {
+.playerTwo {
     display: flex;
 }
 
@@ -107,12 +111,11 @@ input {
 
 .grid-item {
     display: flex;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     border: 2px solid #F2CD60;
-    padding: 20px;
     font-size: 30px;
     text-align: center;
     background-color: #F25757;

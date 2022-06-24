@@ -12,42 +12,41 @@
 
 <body>
     <div id="game-header" class="game-header">
-        <div id="game-yitle" class="game-title">
+        <div id="game-title" class="game-title">
             <header>
                 <h1>Tic-Tac-Toe</h1>
             </header>
         </div>
-        <div id="name-input" class="name-input">
-            <section id="first-section" class="first-section">
-                <input type="text" placeholder="Player 1's Name" id="firsttext"><br>
-            </section>
+        <!-- <div id="players-name-input" class="name-input">
+            <div id="playerOne" class="playerOne">
+                <input type="text" id="firsttext" placeholder="Player 1's Name"><br>
+            </div>
 
-            <section id="second-section" class="second-section">
-                <input type="text" placeholder="Player 2's Name" id="secondtext"><br>
-
-            </section>
-            <section id="submit-button-container" class="submit-button-container">
-                <button class="submit-button" type="button" id="second-button">Submit</button>
-            </section>
+            <div id="playerTwo" class="playerTwo">
+                <input type="text" id="secondtext" placeholder="Player 2's Name"><br>
+            </div>
+            <div id="submit-button-container" class="submit-button-container">
+                <button class="submit-button" id="button1" type="button">Submit</button>
+            </div>
         </div>
         <div id="player-display" class="player-display">
-            <span class="display-player playerX">Player</span>'s turn
+            <p id="player-name-output" class="display-player"></p>
         </div>
         <div id="reset-button-container" class="reset-button-container">
-            <button class="reset-button">Reset</button>
-        </div>
+            <button id="resetButton" class="reset-button">Reset</button>
+        </div> -->
     </div>
     <div id="game-board" class="game-board">
         <div id="grid-container" class="grid-container">
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+            <div id="box0" class="grid-item"></div>
+            <div id="box1" class="grid-item"></div>
+            <div id="box2" class="grid-item"></div>
+            <div id="box3" class="grid-item"></div>
+            <div id="box4" class="grid-item"></div>
+            <div id="box5" class="grid-item"></div>
+            <div id="box6" class="grid-item"></div>
+            <div id="box7" class="grid-item"></div>
+            <div id="box8" class="grid-item"></div>
         </div>
     </div>
 </body>
