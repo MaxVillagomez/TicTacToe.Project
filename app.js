@@ -1,13 +1,23 @@
-let playerText = document.getElementById('playerText');
-let restartButton = document.getElementById('resetButton');
-let boxes = Array.from(document.getElementsByClassName('grid-container'));
+let playerText = document.getElementById('playerText')
+let restartButton = document.getElementById('resetButton')
+let boxes = Array.from(document.getElementsByClassName('grid-container'))
 
-const letterX = "X";
-const letterO = "O";
-let currentPlayer = letterX;
-let emptySpaces = Array(9).fill(null);
+const letterX = "X"
+const letterO = "O"
+let currentPlayer = letterX
 
-console.log(emptySpaces)
+let board = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', ''],
+]
+
+let isGameActive = true;
+
+
+resetButton.addEventListener('click', resetBoard)
+
+
 // const playerOneName = document.getElementById('firsttext');
 // const playerTwoName = document.getElementById('secondtext');
 // const button1 = document.getElementById('button1');
