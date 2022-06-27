@@ -94,13 +94,13 @@ input {
     font-family: 'Space Mono', monospace;
 }
 
-.game-board {
+.board-container {
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
 
-.grid-container {
+.board {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -109,16 +109,17 @@ input {
     grid-template-columns: auto auto auto;
 }
 
-.grid-item {
+.cell {
     display: flex;
     height: 200px;
     width: 200px;
     justify-content: center;
     align-items: center;
     border: 2px solid #F2CD60;
-    font-size: 30px;
+    font-size: 200px;
     text-align: center;
     background-color: #F25757;
+    color: #61E8E1;
 }
 
 @media screen and (max-width: 1080px) {
