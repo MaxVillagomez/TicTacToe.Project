@@ -18,7 +18,7 @@ let gameState = {
 // Problem #1: Creating the gameboard 
 document.addEventListener("DOMContentLoaded", () => { 
     // 1) I need to grab the part of my HTML where I want to create my game board
-    let appElement = document.getElementById('app'); 
+    let boardElement = document.getElementById('board'); 
     createGameBoard();
 
     // 2) I want to create a function that creates a game board element with 3x3 number of cells 
@@ -37,13 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // CODE VERSION OF CONNECTING THIS TO YOUR JS STATE
         for (let i = 0; i < gameState.gameBoard.length; i++) {
             let rowElement = document.createElement('tr'); 
-
+            console.log("this is row element: ", rowElement);
             let jsRow = gameState.gameBoard[i]
             for (let j = 0; j < jsRow.length; j++) {
                 let cellElement = document.createElement('td'); 
                 let currentJSCell = jsRow[j]
                 // let currentJSCell = gameState.gameBoard[i][j]
-
+                // button.setAttribute("name", "helloButton");
+                cellElement.setAttribute('class', 'cell');
                 cellElement.addEventListener('click', colorInCell); 
 
                 if (currentJSCell === 'X') {
@@ -53,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 rowElement.appendChild(cellElement);
             }
-            appElement.appendChild(rowElement); 
+            console.log("This is appelement: ", boardElement);
+            boardElement.appendChild(rowElement);
         }
     }; 
 
