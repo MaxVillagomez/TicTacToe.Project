@@ -29,3 +29,13 @@ What do I want my code to do?
 11. once win condition has been met by either player, display "Player wins!"
 
 
+
+Current Goals: 
+
+- create a function to swap players
+- let players insert name
+    - insert players name into a display and swap the display as it swaps players
+- create win condition
+    - function to check win condition
+    - display winner once a win condition has been met
+- create a reset button to let players reset the game without refreshing the page

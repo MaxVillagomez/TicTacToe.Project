@@ -46,9 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 // button.setAttribute("name", "helloButton");
                 cellElement.setAttribute('class', 'cell');
                 cellElement.addEventListener('click', colorInCell); 
+                cellElement.addEventListener('click', addLetter);
 
                 if (currentJSCell === 'X') {
-                    cellElement.innerText = gameState.c
+                    cellElement.innerText = 'X'
                 } else if (currentJSCell === 'O') {
                     cellElement.innerText = 'O'
                 }
@@ -63,9 +64,20 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('This is the evt object', evt); 
         let targetedElement = evt.target;
         console.log('I am the targeted element: ', targetedElement); 
-        targetedElement.innerText = 'Hi Max!'
-        targetedElement.style.backgroundColor = 'lavender'; 
+        targetedElement.style.backgroundColor = ' #EAF2E3'; 
+    };
+
+    function addLetter (evt) {
+        let targetedElement = evt.target;
+        let currentPlayer = gameState.currentPlayer
+        if (currentPlayer === 'X') {
+            targetedElement.innerText = 'X';        
+        } else {
+            targetedElement.innerText = 'O';
+        }
     }
+
+
 })
 
 // Problem #2: Getting your cells to do SOMETHING
