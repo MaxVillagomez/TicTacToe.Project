@@ -67,6 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
         targetedElement.style.backgroundColor = ' #EAF2E3'; 
     };
 
+    //write a function to swap players
+    // function swapPlayer () {
+    //     let currentPlayer = gameState.currentPlayer
+        
+    //     currentPlayer === 'X' ? 
+    // }
     function addLetter (evt) {
         let targetedElement = evt.target;
         let currentPlayer = gameState.currentPlayer
