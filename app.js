@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else if (currentJSCell === 'O') {
                     cellElement.innerText = 'O'
                 }
+
                 rowElement.appendChild(cellElement);
             }
             console.log("This is appelement: ", boardElement);
@@ -67,21 +68,21 @@ document.addEventListener("DOMContentLoaded", () => {
         targetedElement.style.backgroundColor = ' #EAF2E3'; 
     };
 
-    //write a function to swap players
-    // function swapPlayer () {
-    //     let currentPlayer = gameState.currentPlayer
-        
-    //     currentPlayer === 'X' ? 
-    // }
     function addLetter (evt) {
         let targetedElement = evt.target;
-        let currentPlayer = gameState.currentPlayer
+        let currentPlayer = gameState.currentPlayer;
         if (currentPlayer === 'X') {
-            targetedElement.innerText = 'X';        
-        } else {
+            targetedElement.innerText = 'X';
+            gameState.currentPlayer = 'O';       
+        } else if (currentPlayer === 'O') {
             targetedElement.innerText = 'O';
+            gameState.currentPlayer = 'X';
         }
-    }
+        
+        console.log("This is currentPlayer: ", currentPlayer);
+    };
+    
+    
 
 
 })
