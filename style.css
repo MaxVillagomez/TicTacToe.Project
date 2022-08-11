@@ -116,7 +116,7 @@ input {
     justify-content: center;
     align-items: center;
     border: 2px solid #F2CD60;
-    font-size: 200px;
+    font-size: 150px;
     text-align: center;
     background-color: #F25757;
     color: #61E8E1;
@@ -129,7 +129,7 @@ input {
     }
 
     .game-header {
-        gap: 5px;
+        gap: 1px;
     }
 
     .game-title {
@@ -150,6 +150,7 @@ input {
     }
 
     .reset-button {
-        font-size: 15px;
+        font-size: 20px;
+        margin: 10px;
     }
 }

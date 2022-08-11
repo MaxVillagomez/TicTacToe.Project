@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // CODE VERSION OF CONNECTING THIS TO YOUR JS STATE
         for (let i = 0; i < gameState.gameBoard.length; i++) {
             let rowElement = document.createElement('tr'); 
-            console.log("this is row element: ", rowElement);
             let jsRow = gameState.gameBoard[i]
             for (let j = 0; j < jsRow.length; j++) {
                 let cellElement = document.createElement('td'); 
@@ -45,9 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // let currentJSCell = gameState.gameBoard[i][j]
                 // button.setAttribute("name", "helloButton");
                 cellElement.setAttribute('class', 'cell');
-                cellElement.addEventListener('click', colorInCell); 
                 cellElement.addEventListener('click', addLetter);
-
                 if (currentJSCell === 'X') {
                     cellElement.innerText = 'X'
                 } else if (currentJSCell === 'O') {
@@ -56,17 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 rowElement.appendChild(cellElement);
             }
-            console.log("This is appelement: ", boardElement);
             boardElement.appendChild(rowElement);
         }
     }; 
-
-    function colorInCell (evt) {
-        console.log('This is the evt object', evt); 
-        let targetedElement = evt.target;
-        console.log('I am the targeted element: ', targetedElement); 
-        targetedElement.style.backgroundColor = ' #EAF2E3'; 
-    };
 
     function addLetter (evt) {
         let targetedElement = evt.target;
@@ -78,11 +67,26 @@ document.addEventListener("DOMContentLoaded", () => {
             targetedElement.innerText = 'O';
             gameState.currentPlayer = 'X';
         }
-        
-        console.log("This is currentPlayer: ", currentPlayer);
     };
     
+    let resetButton = document.getElementById('resetButton');
+    resetButton.addEventListener('click', resetBoard);
+    function resetBoard() {  
+        gameState = {
+            gameBoard: [
+                [null, null, null],
+                [null, null, null],
+                [null, null, null]
+            ],
+            currentPlayer: 'X',
+            players: ['X', 'O']
+        };
+        boardElement.innerText = '';
+        createGameBoard();
+    }
+
     
+
 
 
 })
