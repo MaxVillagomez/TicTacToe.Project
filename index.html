@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <title>TicTacToe</title>
-</head>
-
-<body>
-    <div id="game-header" class="game-header">
-        <div id="game-title" class="game-title">
-            <header>
-                <h1>Tic-Tac-Toe</h1>
-            </header>
-        </div>
-        <div id="players-name-input" class="name-input">
-            <div id="playerOne" class="playerOne">
-                <input type="text" id="firsttext" placeholder="Player 1's Name"><br>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="style.css" />
+        
+        <script src="app.js" defer ></script> 
+    </head>
+    <body>
+        <div>
+            <h1 class="game-title">Tic-Tac-Toe</h1>
+            <div id="display-announcer" class="display announcer hide"></div>
+                <div class="game-header">
+                    <label> Enter Player 1 Name: 
+                        <input type="text" placeholder="Player 1 name" class="name-input"></input>
+                    </label>
+                    <label> Enter Player 2 Name: 
+                        <input type="text" placeholder="Player 2 name" class="name-input"></input>
+                    </label>
+                    <div>
+                        <button id="getnames" class="submit-button" type="button">Submit Names</button>
+                    </div>
+                    
+                </div>
+                <div class="display">
+                    <p id="display-player"></p>
+                </div>
+                <div class="submit-button-container">
+                    <button class="reset-button" id="reset">Reset</button>
+                </div>
             </div>
-
-            <div id="playerTwo" class="playerTwo">
-                <input type="text" id="secondtext" placeholder="Player 2's Name"><br>
-            </div>
-            <div id="submit-button-container" class="submit-button-container">
-                <button class="submit-button" id="button1" type="button">Submit</button>
-            </div>
-        </div>
-        <div id="player-display" class="player-display">
-            <p id="player-name-output" class="display-player"></p>
-        </div>
-        <div id="reset-button-container" class="reset-button-container">
-            <button id="resetButton" class="reset-button">Reset</button>
-        </div>
-    </div>
-    <div id="board-container" class="board-container">
-        <div id="board">
-        </div>
-    </div>
-</body>
-
+                
+                <div id="grid-container">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </div>
+               
+    </body>
 </html>
